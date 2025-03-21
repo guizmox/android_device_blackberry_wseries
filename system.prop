@@ -5,17 +5,17 @@ audio.offload.pcm.16bit.enable=true
 audio.offload.pcm.24bit.enable=true
 audio.offload.video=true
 persist.audio.camcorder.stereo=true
-persist.vendor.audio.fluence.audiorec=true
-persist.vendor.audio.fluence.speaker=true
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=true
-ro.vendor.audio.sdk.fluencetype=fluence
+persist.vendor.audio.fluence.audiorec=false
+persist.vendor.audio.fluence.speaker=false
+persist.vendor.audio.fluence.voicecall=false
+persist.vendor.audio.fluence.voicerec=false
+ro.vendor.audio.sdk.fluencetype=none
 vendor.audio.offload.buffer.size.kb=32
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiple.enabled=false
 
 ro.config.media_vol_steps=25
-ro.config.vc_call_vol_steps=7
+ro.config.vc_call_vol_steps=14
 
 #ro.audio.flinger_standbytime_ms=300
 #vendor.audio_hal.period_size=192
@@ -47,7 +47,7 @@ dalvik.vm.heapmaxfree=8m
 
 # Dexopt
 dalvik.vm.boot-dex2oat-threads=4
-dalvik.vm.dex2oat-threads=2
+dalvik.vm.dex2oat-threads=4
 dalvik.vm.image-dex2oat-threads=4
 
 # Graphics
